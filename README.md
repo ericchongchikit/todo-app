@@ -90,7 +90,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 │   │   ├── ImportTodo.tsx        # Import CSV modal
 │   │   ├── TodoList.tsx          # Todo list container
 │   │   ├── TodoItem.tsx          # Individual todo card
-│   │   ├── Calendar.tsx          # Calendar view component
 │   │   └── Filters.tsx           # Filter component
 │   ├── lib/
 │   │   ├── db.ts                 # PostgreSQL connection pool

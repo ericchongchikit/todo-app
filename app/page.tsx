@@ -3,7 +3,6 @@
 import { useState, useEffect, useCallback } from "react";
 import {
   List,
-  Calendar,
   Download,
   Upload,
   Plus,
@@ -23,7 +22,7 @@ export default function Home() {
   const [isImportOpen, setIsImportOpen] = useState(false);
   const [todos, setTodos] = useState<Todo[]>([]);
   const [loading, setLoading] = useState(true);
-  const [rowsPerPage, setRowsPerPage] = useState(10);
+  const [rowsPerPage, setRowsPerPage] = useState(4);
   const [currentPage, setCurrentPage] = useState(1);
   const [statusFilter, setStatusFilter] = useState("all");
   const [categoryFilter, setCategoryFilter] = useState<string[]>([]);
@@ -160,10 +159,6 @@ export default function Home() {
             <button className="btn btn-tab-active">
               <List className="icon-sm" />
               List
-            </button>
-            <button className="btn btn-tab-inactive">
-              <Calendar className="icon-sm" />
-              Calendar
             </button>
           </div>
 
